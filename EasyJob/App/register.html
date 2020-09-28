@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Easy Job</title>
+</head>
+<body>
+    <header>
+        <img src="pictures/EasyJobEmpty.png" alt="Easy Job"> 
+        <h1>Easy Job</h1>
+            <!-- <h2>Employment Solution</h2> -->
+        <nav>
+            <!-- <p>Easy Job</p> -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobseekers.html">News</a></li>
+                <li><a href="joblist.html">Job Seekers</a>
+                    <ul>
+                        <li><a href="joblist.html">Job List</a></li>
+                        <li><a href="#">Interview Online</a></li>
+                        <li><a href="#">Company Tour</a></li>
+                        <li><a href="#">CV maker</a></li>
+                    </ul>
+                </li>
+                <li><a href="employeers.html">Employers</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <a href="login.html"><button>Login / Sign Up</button></a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="tit">Register</h1>
+        <div class="regbox">
+            <form action="http://localhost:8080/easyjob/dbh.php" method="post">
+                <label><strong></strong>What's your name?<br /></strong></label>
+                <input type="text" id="txtName" name="userName" placeholder="Enter your name.." /><br />
+                <label><strong>What's your e-mail address?<br /></strong></label>
+                <input type="text"  id="txtEmail" name="userEmail" placeholder="Enter your e-mail.." /><br />
+                <label><strong>What's your phone number?<br /></strong></label>
+                <input type="text"  id="txtPhone" name=userPhone placeholder="Enter your phone number" /><br />
+                <label><strong>Additional Information</strong></label><br><br>
+                <label><strong> Address</strong></label><br />
+                <input type="text"  id="txtAddress" name="userAddress" placeholder="Enter your address.." /><br />
+                <label>Gender</label><br><br>
+                <input type="radio" name="gender" value="m" id="Male"> Male
+                <input type="radio" name="gender" value="f" id="Female"> Female <br>
+                <label><strong>Set up your password</strong></label><br />
+                <input type="password" id="txtPassword" name="password" placeholder="Enter your password.." /><br />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

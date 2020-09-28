@@ -1,0 +1,558 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* My code */
+
+*{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #FFCC99; */
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+
+/* header */
+header{
+    background-color: #111;
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+header img{
+    display: block;
+    margin: 0 40px;
+    vertical-align: center;
+    float: left;
+    width: 100px fit-content;
+    height: 100px;
+}
+
+header h1{
+    padding: 40px;
+    float: left;
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+    width: fit-content;
+}
+
+header nav{
+    vertical-align: middle;
+}
+
+header nav ul{
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    vertical-align: middle;
+}
+
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+    position: relative;
+}
+
+header nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    line-height: 60px;
+}
+
+header nav ul li a:hover{
+    color: red;
+}
+
+header nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #111;
+    /* background-color: white; */
+    padding: 20px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+header nav ul li ul{
+    width: 200px;
+    border-radius: 0 0 4px 4px;
+    z-index: 1000;
+}
+
+header nav ul li ul li a{
+    padding: 20px 14px;
+}
+
+header nav ul li ul li a:hover{
+    background-color: red;
+    color: white;
+}
+
+
+/* header img{
+    display: block;
+    margin: 20px 40px;
+    float: left;
+    width: 100px fit-content;
+    height: 100px;
+}
+
+nav{
+    width: 97%;
+    height: 125px;
+    background-color: #111;
+    padding: 20px 20px;
+}
+
+nav p{
+    font-family: Arial;
+    color: white;
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 20px 20px;
+    vertical-align: middle;
+}
+
+nav ul{
+    float: right;;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    font-family: Arial;
+    color: white;
+    font-size: 14px;
+    padding: 25px 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    padding: 10px;
+    z-index: auto;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    width: 150px;
+    border-radius: 0 0 4px 4px;
+    
+}
+
+nav ul li ul li a{
+    padding: 8px 14px;
+}
+
+nav ul li ul li a:hover{
+    background-color: red;
+    color: white;
+} */
+
+button{
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 15px;
+}
+
+button:hover{
+    transition-duration: 0.4s;
+    background-color: red;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+/* main */
+
+.index-banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(pictures/designerwork.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px #111;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    width: 500px;
+    margin: auto;
+}
+
+.image-container{
+    width: 60%;
+    margin: auto;
+}
+
+.image-slide img{
+    width: 1366px;
+    height: 768px;
+}
+
+/* footer */
+
+footer{
+    margin-top: 30px;
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color:#111;
+    overflow: hidden;
+}
+
+footer ul{
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.footer-sm{
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.footer-sm img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* form  */
+
+form{
+    align-items: center;
+    margin: 30px 30% 0 20%;
+}
+
+form a{
+    color: white;
+}
+
+form button{
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+
+/* login */
+
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 0px;
+    z-index: 500;
+}
+
+.loginbox input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+/* jobseekers */
+
+.jobtutor{
+    margin: 50px auto;
+    width: 1000px;
+}
+
+.jobtutor h1{
+    margin: 20px auto;
+}
+
+/* joblist */
+
+.item{
+    margin: 20px auto 20px 30px;
+    display: flex;
+}
+
+.itemtext{
+    display: flexbox;
+    margin: auto 20px;
+}
+
+/* register */
+.regbox{
+    width: 500px;
+    height: 700px;
+    background: #000;
+    color: #fff;
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px 0px;
+}
+
+.regbox input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.regbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+}
+
+.regbox input[type="radio"]{
+    width: auto;
+    vertical-align: top;
+}
+
+.tit{
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* employeers */
+
+.vacancy{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.vacancy img{
+    width: 50%;
+    height: 100%;
+    
+}
+
+.empbox{
+    margin: 20px 60%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    width: 500px;
+    background-color: #000;
+    color: white;
+    
+}
+
+.empbox form{
+    margin: 20px auto 20px 20px;
+    z-index: 2;
+
+}
+
+.empbox input[type="text"], textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    width: 450px;
+}
+
+.empbox form textarea{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: white;
+}
+
+.empbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+}
+
+
+
+
+
